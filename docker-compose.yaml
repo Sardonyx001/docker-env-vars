@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    # 3. Set using the environment attribute in the Compose file
+    environment:
+      - C="From docker-compose environment"
+      - D="From docker-compose environment"
+      - E="From docker-compose environment"
+    # 4. Use of the env_file attribute in the Compose file
+    env_file:
+      - .env_file
